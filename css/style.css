@@ -447,14 +447,24 @@ hr {
     padding: 10px;
 }
 
+.contact_form form select {
+    border-radius: 0;
+    margin-bottom: 10px;
+    border-color: #caa45c66;
+    padding: 0;
+    padding: 10px;
+}
+
 .contact_form form input::placeholder {
     font-size: 14px;
     font-weight: 100;
+    color: var(--cs-title);
 }
 
 .contact_form form textarea::placeholder {
     font-size: 14px;
     font-weight: 100;
+    color: var(--cs-title);
 }
 
 .contact_form form textarea {
@@ -621,9 +631,10 @@ hr {
 
 
 /* review */
-.review{
+.review {
     padding: 20px 0px 80px 0px;
 }
+
 .review_card {
     display: flex;
     justify-content: space-between;
@@ -679,9 +690,67 @@ hr {
     background-color: var(--cs-primary);
 }
 
-.abpg_btn{
+.abpg_btn {
     margin: 30px 0px 80px 0px
 }
 
 
 /* menu page ============================= */
+.menupg {
+    background-color: #caa45c08;
+}
+
+.litem {
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px dashed var(--cs-primary);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.litem .dish_name {}
+
+.litem .dish_name h4 {
+    color: var(--cs-title);
+    font-size: 20px;
+}
+
+.litem .dish_name h5 {
+    color: var(--cs-title);
+}
+
+
+.menu_item {
+    padding: 20px;
+    border: 1px solid #caa45c5c;
+    margin-bottom: 40px;
+    background-color: #caa45c08;
+}
+
+
+
+/* reservation page===================== */
+.sidefr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidefr select {
+    width: 32%;
+}
+
+.sidefr select::placeholder {
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--cs-title);
+}
+
+.sidefr input{
+    width: 32%;
+}
+
+.sidefr input::placeholder {
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--cs-title);
+}
