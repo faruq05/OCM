@@ -40,6 +40,11 @@ h2 {
     padding: 10px 0px;
 }
 
+hr {
+    margin: 10px 0px;
+    color: var(--cs-primary);
+}
+
 .c-60 {
     padding: 60px 0px;
 }
@@ -74,6 +79,10 @@ h2 {
     font-weight: 500;
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--cs-primary);
 }
 
 .logo {
@@ -155,7 +164,7 @@ h2 {
     background-image: url(../images/about_bg.png);
     background-position: left center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .about_content h3 {
@@ -224,6 +233,7 @@ h2 {
     width: 70%;
     margin: auto;
     padding: 50px 0px;
+    position: relative;
 }
 
 .cafe_time p {
@@ -234,6 +244,17 @@ h2 {
     color: var(--cs-wh);
     font-size: 30px;
     font-weight: 300;
+}
+
+.divide::before {
+    position: absolute;
+    content: '';
+    background-color: var(--cs-primary);
+    height: 170px;
+    width: 1px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* explorr  */
@@ -266,8 +287,8 @@ h2 {
     color: var(--cs-wh);
 }
 
-.qlinks{
-    background-color: transparent!important;
+.qlinks {
+    background-color: transparent !important;
 }
 
 .dish {
@@ -523,11 +544,11 @@ h2 {
     padding-right: 5px;
 }
 
-.footer_content{
+.footer_content {
     margin: 40px 0px;
 }
 
-.footer_content h4{
+.footer_content h4 {
     font-size: 14px;
     color: var(--cs-wh);
     font-weight: 100;
@@ -535,21 +556,132 @@ h2 {
     padding: 10px 0px;
 }
 
-.btn-footer{
+.btn-footer {
     padding: 0;
     padding: 10px 40px;
     border: 1px solid var(--cs-primary);
 }
 
-.btn-footer:hover{
+.btn-footer:hover {
     background-color: transparent;
     border: 1px solid var(--cs-primary);
 }
 
-.cc h6{
+.cc h6 {
     font-size: 14px;
     color: var(--cs-primary);
     font-weight: 100;
     text-align: center;
     cursor: pointer;
 }
+
+
+
+/* about page =======================*/
+.aboutpg .row {
+    min-height: 50vh;
+}
+
+.aboutpg_content p {
+    font-size: 20px;
+    color: var(--cs-primary);
+}
+
+.aboutpg_content h2 {
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.feature {
+    margin-top: 80px;
+}
+
+.feature_box {
+    text-align: center;
+    padding: 20px;
+}
+
+.feature_box h4 {
+    font-size: 20px;
+    margin: 0;
+    margin: 10px 0px;
+}
+
+.feature_box h3 {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 22px;
+}
+
+.btn_abpgbook {
+    color: var(--cs-title);
+    border: 2px solid var(--cs-title);
+}
+
+
+/* review */
+.review{
+    padding: 20px 0px 80px 0px;
+}
+.review_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review_box {
+    padding: 60px 30px;
+    border: 1px solid #caa45c7d;
+    width: 48%;
+    text-align: center;
+    height: 300px;
+}
+
+.guest_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guest_info img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.guest_info h3 {
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.rating {
+    padding: 15px 0px 0px 0px;
+}
+
+
+.rating i {}
+
+.rev {}
+
+.rev h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.carousel-indicators {
+    bottom: -55px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--cs-primary);
+}
+
+.abpg_btn{
+    margin: 30px 0px 80px 0px
+}
+
+
+/* menu page ============================= */
