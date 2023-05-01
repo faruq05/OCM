@@ -934,5 +934,12 @@ hr {
     height: 350px;
 
     border-radius: 10px;
-    back
+    
+
+}
+
+
+.brand_logo {
+    text-align: center;
+    margin-bottom: 20px;
 }
