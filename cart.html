@@ -74,8 +74,8 @@
             <div class="row align-items-center text-center">
                 <div class="col-md-12">
                     <div class="hero_content aboutpg_content">
-                        <p>Booking a table online is easy</p>
-                        <h2>MAKE ONLINE RESERVATION
+                        <p>Order online is easy</p>
+                        <h2>Your Cart
                         </h2>
                     </div>
 
@@ -84,136 +84,156 @@
         </div>
     </div>
 
-    <!-- reserve -->
-    <div class="booking c-60">
+    <!-- cart -->
+    <div class="cart c-60">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 reservation text-center">
-                    <h2>Make A Reservation</h2>
-                    <h4>You can book a table online easily in just a minute. <br> Reservations are for lunch and
-                        dinner, check the availability of your table & book it now!</h4>
-                    <div class="contact_form booking_form">
+                <table class="table table-bordered ">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <div class="pro_details">
+                                    <img src="images/breakfast.jpg" class="img-fluid" alt="">
+                                    <h5>Smoked Meat Sandwich</h5>
+                                    <div class="close_btn">
+                                        <a href="#"><i class="fa-solid fa-rectangle-xmark"
+                                                style="color: #282828;"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <td>$12.95</td>
+                            <td>
+                                <div class="qty_input">
+                                    <i class="dec_qty"></i>
+                                    <input type="number" value="1" class="qty-input form-control">
+                                    <i class="inc_qty"></i>
+                                </div>
+                            </td>
+                            <td>$12.95</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="pro_details">
+                                    <img src="images/davide-cantelli-jpkfc5_d-DI-unsplash.jpg" class="img-fluid" alt="">
+                                    <h5>Chicken Crispy</h5>
+                                    <div class="close_btn">
+                                        <a href="#"><i class="fa-solid fa-rectangle-xmark"
+                                                style="color: #282828;"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <td>$32.95</td>
+                            <td>
+                                <div class="qty_input">
+                                    <i class="dec_qty"></i>
+                                    <input type="number" value="1" class="qty-input form-control">
+                                    <i class="inc_qty"></i>
+                                </div>
+                            </td>
+                            <td>$32.95</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="pro_details">
+                                    <img src="images/gallery (3).jpg" class="img-fluid" alt="">
+                                    <h5>Pan Of Fried Eggs</h5>
+                                    <div class="close_btn">
+                                        <a href="#"><i class="fa-solid fa-rectangle-xmark"
+                                                style="color: #282828;"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <td>$10.95</td>
+                            <td>
+                                <div class="qty_input">
+                                    <i class="dec_qty"></i>
+                                    <input type="number" value="1" class="qty-input form-control">
+                                    <i class="inc_qty"></i>
+                                </div>
+                            </td>
+                            <td>$10.95</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="contact_form shipping">
+                        <h2>Shipping Address :</h2>
                         <form action="">
-                            <div class="sidefr">
-                                <select class="form-control">
-                                    <option value="1person" class="form-control">1 Person</option>
-                                    <option value="2people" class="form-control">2 People</option>
-                                    <option value="3people" class="form-control">3 People</option>
-                                    <option value="4people" class="form-control">4 People</option>
-                                    <option value="5people" class="form-control">5 People</option>
-                                    <option value="6people" class="form-control">6 People</option>
-                                    <option value="7people" class="form-control">7 People</option>
-                                    <option value="8people" class="form-control">8 People</option>
-                                    <option value="9people" class="form-control">9 People</option>
-                                    <option value="10people" class="form-control">10 People</option>
-                                </select>
+                            <input type="text" name="name" id="name" placeholder="Name" class="form-control" required>
+                            <input type="tel" name="phone" id="phone" placeholder="Phone" class="form-control" required>
+                            <input type="text" name="area" id="area" placeholder="Area" class="form-control" required>
+                            <input type="text" name="address" id="address" placeholder="Address" class="form-control"
+                                required>
+                            <input type="number" name="zip" id="zip" placeholder="Zip Code" class="form-control"
+                                required>
+                            <textarea name="message" id="Message" cols="30" rows="2"
+                                placeholder="Any request? (optional)" class="form-control"></textarea>
 
-                                <input type="date" name="date" id="date" class="form-control">
-
-                            </div>
-                            <div class="sidefr ">
-                                <input type="time" name="time" id="time" class="form-control">
-
-                                <input type="text" name="name" id="name" placeholder="Name" class="form-control">
-
-                            </div>
-                            <div class="sidefr ">
-                                <input type="email" name="email" id="email" placeholder="E-mail" class="form-control">
-                                <input type="tel" name="phone" id="phone" placeholder="Phone" class="form-control">
-
-
-                            </div>
-                            <textarea name="message" id="Message" cols="30" rows="2" placeholder="Any notes or request?"
-                                class="form-control"></textarea>
-                            <input type="submit" value="Make Reservation" class="btn">
-
+                            <input type="submit" value="Checkout" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#checkout">
                         </form>
+
+                        <!-- Modal
+                        <div class="modal fade" id="checkout" tabindex="-1" aria-labelledby="checkoutLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="checkoutLabel">Payment Option</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cart_total shipping">
+                        <h2>Cart Total :</h2>
+                        <div class="total">
+                            <div class="ct">
+                                <h4>Cart Subtotal :</h4>
+                                <h5>$56.85</h5>
+                            </div>
+                            <div class="ct">
+                                <h4>Shipping :</h4>
+                                <h5>$5.95</h5>
+                            </div>
+                            <div class="ct">
+                                <h4>Order Total :</h4>
+                                <h5>$62.8</h5>
+                            </div>
+                            <form action="" class="d-flex">
+                                <input type="text" name="coupon" id="coupon" placeholder="Place your Coupon Code"
+                                    class="form-control">
+                                <input type="submit" value="Apply Coupon" class="btn btn-menu ms-2">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- cta -->
-    <div class="cta c-60" id="cta">
-        <div class="container">
-            <div class="row text-center align-items-center">
-                <div class="col-md-12">
-                    <h2>Opening Hours</h2>
-                    <p>Call for Reservations</p>
-                    <div class="time">
-                        <div class="cafe_time">
-                            <p>Sunday to Wednesday</p>
-                            <h4>08:00 AM</h4>
-                            <h4>10:00 PM</h4>
-                        </div>
-                        <div class="divide"></div>
-                        <div class="cafe_time">
-                            <p>Friday And Saturday</p>
-                            <h4>10:00 AM</h4>
-                            <h4>09:00 PM</h4>
-                        </div>
-                    </div>
-                    <a href="menu.html" class="btn btn-menu">Our Menu</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- contact
-    <div class="contact c-60" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="contact_box">
-                        <div class="row ">
-                            <div class="col-md-4 info">
-                                <p>Check Availability</p>
-                                <h2>Opening Times</h2>
-                                <hr>
-                                <div class="times">
-                                    <h4>Sunday - Wednesday</h4>
-                                    <p>08:00 AM - 10:00 PM</p>
-                                </div>
-                                <div class="times">
-                                    <h4>Friday - Saturday</h4>
-                                    <p>10:00 AM - 09:00 PM</p>
-                                </div>
-                                <div class="times">
-                                    <h4>Thursday</h4>
-                                    <p>Day off</p>
-                                </div>
-                                <div class="call_now">
-                                    <p>Call Us Now</p>
-                                    <a href="tel: 01234567891">01234567891</a>
-                                </div>
-                            </div>
-                            <div class="col-md-8 reservation">
-                                <h2>Get in Touch</h2>
-                                <h4>You can book a table online easily in just a minute. Reservations are for lunch and
-                                    dinner, check the availability of your table & book it now!</h4>
-
-                                <div class="contact_form">
-                                    <form action="">
-                                        <input type="text" name="name" id="name" placeholder="Name"
-                                            class="form-control">
-                                        <input type="email" name="email" id="email" placeholder="E-mail"
-                                            class="form-control">
-                                        <input type="tel" name="phone" id="phone" placeholder="Phone"
-                                            class="form-control">
-                                        <textarea name="message" id="Message" cols="30" rows="10"
-                                            placeholder="How can we help you?" class="form-control"></textarea>
-                                        <input type="submit" value="Send Message" class="btn">
-                                    </form>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <!-- footer -->
     <div class="footer c-60" id="footer">
@@ -278,7 +298,6 @@
             </div>
         </div>
     </div>
-
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
