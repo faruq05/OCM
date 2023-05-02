@@ -74,6 +74,11 @@ hr {
     border: none;
 }
 
+.navbar-light .navbar-toggler {
+    color: var(--cs-primary);
+    border-color: transparent;
+}
+
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -934,7 +939,7 @@ hr {
     height: 350px;
 
     border-radius: 10px;
-    
+
 
 }
 

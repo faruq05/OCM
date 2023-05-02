@@ -35,7 +35,9 @@
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler">
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -88,7 +90,7 @@
     <div class="cart c-60">
         <div class="container">
             <div class="row">
-                <table class="table table-bordered ">
+                <table class="table table-bordered table-responsive">
                     <thead>
                         <tr>
                             <th scope="col">Product</th>
@@ -166,9 +168,9 @@
             </div>
 
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 order-md-1 order-2">
                     <div class="contact_form shipping">
-                        <h2>Shipping Address :</h2>
+                        <h2>Delivery Address :</h2>
                         <form action="">
                             <input type="text" name="name" id="name" placeholder="Name" class="form-control" required>
                             <input type="tel" name="phone" id="phone" placeholder="Phone" class="form-control" required>
@@ -207,7 +209,7 @@
                         </div> -->
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 order-md-2 order-1">
                     <div class="cart_total shipping">
                         <h2>Cart Total :</h2>
                         <div class="total">
